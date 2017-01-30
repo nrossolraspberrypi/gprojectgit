@@ -1,3 +1,4 @@
 *.out
 dropbox_uploader.sh
 emailAlerts.py
+gitupload.sh
