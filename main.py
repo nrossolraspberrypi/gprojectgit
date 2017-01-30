@@ -85,7 +85,7 @@ def setLEDsToShowSystemWarning():
     GPIO.output(GOOD_LED_GPIO_OUTPUT_PIN, False)
 
 def uploadRecentActivity():
-    os.system('timeout ' + str(WEB_CALLS_TIMEOUT_IN_SECONDS) + ' ./dropbox_uploader.sh upload '+xmlFilename+' Public/sites/gproject/' + xmlFilename + ' &')
+    os.system('timeout ' + str(WEB_CALLS_TIMEOUT_IN_SECONDS) + ' ./gitupload.sh &')
 
 def uploadRecentActivityToDropbox(): #Old deprecated technique using the open source dropbox-uploader script 
     os.system('timeout ' + str(WEB_CALLS_TIMEOUT_IN_SECONDS) + ' ./dropbox_uploader.sh upload '+xmlFilename+' Public/sites/gproject/' + xmlFilename + ' &')
